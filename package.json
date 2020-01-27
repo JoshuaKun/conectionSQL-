@@ -1,0 +1,16 @@
+{
+  "name": "com.test",
+  "version": "1.0.0",
+  "description": "prueba",
+  "main": "conectionSql.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mssql": "^6.0.1",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "nodemon": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lcastro",
+  "license": "ISC"
+}
