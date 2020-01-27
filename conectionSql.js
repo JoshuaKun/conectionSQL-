@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
     var config = {
         user: 'user_bd',
         password: 'pass',
-        server: '192.168.0.3', 
+        server: 'server', 
         database: 'user_bd' ,
         
         
@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 
                 conection:'hubo problemas al  conectar  con la BD',
                 messaje:err
-            }[0]);
+            });
             
         }
     
@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
         const request = new sql.Request();
            
         // query to the database and get the records
-        request.query('select f120_referencia from t120_mc_items\n', function (err, recordset) {
+        request.query('\n', function (err, recordset) {
             
             
 
